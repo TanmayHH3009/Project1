@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cell Task</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Arial", sans-serif;
+            color: #039be5;
+            /* Primary color Blue */
+            letter-spacing: 3px;
+        }
+
+        /* Navbar styles */
+        .w3-top {
+            position: sticky;
+            top: 0;
+        }
+        .w3-image{
+            height: 1280;
+        width: 1920;
+        }
+        .w3-bar {
+            background-color: #039be5;
+            /*Primary color Blue */
+            letter-spacing: 4px;
+        }
+
+        .w3-bar a {
+            color: #ffffff;
+            /* White text for navbar links */
+        }
+
+        .w3-bar a:hover {
+            background-color: #007acc;
+            /* Darker shade of blue on hover */
+        }
+
+        /* Header styles */
+        .w3-content {
+            max-width: 1100px;
+        }
+
+        .w3-display-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .w3-display-bottomleft {
+            padding: 20px;
+        }
+
+        .w3-opacity {
+            opacity: 10;
+        }
+
+        /* Contact form styles */
+        .w3-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .w3-text-blue-grey {
+            color: #687d8b;
+            /* Subtle blue-grey text color */
+        }
+
+        .w3-button {
+            background-color: #039be5;
+            /* Primary color Blue */
+            color: #ffffff;
+            /* White text for buttons */
+            padding: 10px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .w3- button:hover {
+            background-color: #007acc;
+            /* Darker shade of blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (sits on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card">
+
+            <a class="w3-bar-item w3-button " href="#home">E-Cell</a>
+            <!-- Right-sided navbar links, hide items on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a class="w3-bar-item w3-button " href="#about">About</a>
+                <a class="w3-bar-item w3-button " href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- header -->
+    <header id="home" class="w3-display-container w3-content w3-wide" style="max-width:1600 px; min-width:500px">
+        <img class="w3-image" src="656665.jpg" alt="Hamburger Catering" width="1920" height="1280">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity" style="background-color: #000;">
+            <h1 class="w3-xxlarge" style="color: #fff;">E-Cell</h1>
+        </div>
+    </header>
+    <!--Page content-->
+    <div class="w3-content" style="max-width: 1100px">
+
+        <!--About Section-->
+        <div id="about" class="w3-row w3-padding-64">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img class="w3-round w3-image w3-opacity-min" src="765277.jpg" alt="Ecell VNIT" width="600"
+                    height="750">
+            </div>
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-top">About Ecell VNIT </h1>
+                <br>
+                <h5 class="w3-center" style="color:#039be5;">Igniting Entepreneurial Spirits
+                </h5>
+                <p class="w3-large">
+                    Ecell Vnit is an initiative to promote and nurture entrepreneurship among students. Our goal is to
+                    create an ecosystem that fosters innovation and encourages aspiring entrepreneurs to transform their
+                    ideas into successful businesses. We organize workshops, seminars, and events that provide valuable
+                    insights and networking opportunities to young minds.
+                </p>
+                <p class="w3-large">
+                    We believe in the power of innovation and creativity. Join us on this entrepreneurial journey and be
+                    a part of the change. Together,
+                    we can make
+                    a difference!
+                </p>
+            </div>
+        </div>
+        <!-- contact section -->
+        <div id="contact" class="w3-container w3-padding-64">
+            <h1>Contact ECELL VNIT</h1>
+            <br>
+            <P>
+                If you have any questionsor would like to get in touch with us, we'd love to hear from you. Feel free to
+                reach out using the contact details below:
+            </P>
+            <p class="w3-text-black"><b>ECELL VNIT,VNIT Campus, Nagpur, Maharashtra</b> </p>
+            <p>
+                You can also contact us by phone at 0123456789 or email at contact@ecellvnit.com. Alternatively, you can
+                use form below to send us a massage:
+            </p>
+            <form action="/contact_action.php" method="post">
+
+                <p>
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Name" required="" name="Name">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16" type="Email" placeholder="Email" required="" name="Email">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16" type="text" placeholder="Subject" required="" name="Subject">
+                </p>
+                <p>
+                    <textarea class="w3-input w3-padding-16" placeholder="Massage" required="" name="Massage">
+                    </textarea>
+                </p>
+                <a class="w3-bar-item w3-button" href="#home">
+                    Send Massage
+                </a>
+            </form>
+        </div>
+        <!-- footer -->
+        <footer class="w3-center w3-light-gray w3-padding-32">
+            <p>
+                Created As
+                <a class="w3-hover-text-green" href="https://www.ecellvnit.org/" title="ECELL VNIT" target="_blank"
+                    style="text-decoration: none; color:#333;">E-CELL Demo Template </a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
